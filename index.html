@@ -40,7 +40,7 @@
                     <a class="nav-link" href="contato.html">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
@@ -49,6 +49,39 @@
           </div>
 
     </nav>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Entre na sua conta</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+                <form>
+                    <div class="form-group">
+                      <label for="loginEmail">E-mail</label>
+                      <input type="email" class="form-control" id="loginEmail">
+                    </div>
+                    <div class="form-group">
+                      <label for="loginSenha">Senha</label>
+                      <input type="password" class="form-control" id="loginSenha">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar na conta</button>
+                    <small class="form-text text-muted">Esqueceu sua senha? <a href="#">Clique aqui</a>.</small>
+                  </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- FINAL DO MODAL -->
 
     <section class="container-fluid">
         <div class="row bg-dark text-white">
